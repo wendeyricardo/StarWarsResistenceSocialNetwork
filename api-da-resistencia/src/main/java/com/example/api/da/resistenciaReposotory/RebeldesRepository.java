@@ -1,0 +1,9 @@
+package com.example.api.da.resistenciaReposotory;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.api.da.resistencia.Rebelde;
+
+public interface RebeldesRepository extends JpaRepository<Rebelde, Long> {
+
+}

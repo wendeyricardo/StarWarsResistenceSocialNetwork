@@ -1,0 +1,13 @@
+CREATE TABLE rebelde(
+	id_rebelde BIGINT(6) PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(80) NOT NULL,
+    idade INTEGER (2) NOT NULL,
+    genero VARCHAR(20) NOT NULL,
+    localizacao VARCHAR (70) NOT NULL
+    
+) ENGINE=InnDB DEFAULT CHARSET=utf8;
+
+
+
+
+INSERT INTO rebeld (nome, idade, genero, localizacao) VALUES ('wendey', 27, 'masculino', 'belém do pará');

@@ -1,0 +1,14 @@
+package com.example.api.da.resistencia;
+
+import org.hibernate.annotations.Entity;
+import org.hibernate.annotations.Table;
+
+@Entity
+@Table(name = "rebeldesdagalaxia")
+public class Rebelde {
+	private Long id_rebelde;
+	private String nome;
+	private String genero;
+	private String localizacao;
+
+}

@@ -1,0 +1,20 @@
+package com.example.api.da.resistencia.resource;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.api.da.resistenciaReposotory.RebeldeRepository;
+
+@RestController
+@RequestMapping ("/rebeldes")
+public class RebeldeResource {
+	
+	private RebeldeRepository rebeldeRepository;
+	
+	@GetMapping
+	public List<Rebeldes> listar(){
+		return rebeldeRepository.findAll();
+	}
+
+}
