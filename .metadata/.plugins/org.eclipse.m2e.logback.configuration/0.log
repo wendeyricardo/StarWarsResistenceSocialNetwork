@@ -1426,3 +1426,6 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2018-10-29 01:13:01,545 [Worker-73: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2018-10-29 01:13:01,550 [Worker-73: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-10-29 01:13:01,551 [Worker-73: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\StarWarsResistenceSocialNetwork\api-da-resistencia\src\test\resources
+2018-10-29 01:34:25,371 [Worker-5: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-10-29 01:34:49,274 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to build parent project for org.springframework.boot:spring-boot-starter-parent:pom:2.0.6.RELEASE
+2018-10-29 01:34:49,326 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to build parent project for br.com.phoebus.starwarsresistence:api-da-resistencia:jar:0.0.1-SNAPSHOT

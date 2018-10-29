@@ -1119,3 +1119,108 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jdt.debug 2 0 2018-10-29 01:11:00.539
 !MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+!SESSION 2018-10-29 01:33:38.560 -----------------------------------------------
+eclipse.buildId=3.9.6.201809180749-RELEASE-e49
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.jface 2 0 2018-10-29 01:34:02.942
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-10-29 01:34:02.943
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2c955487,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@38ae69f7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-10-29 01:34:27.689
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\trabalho'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 01:34:49.278
+!MESSAGE Failed to build parent project for org.springframework.boot:spring-boot-starter-parent:pom:2.0.6.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-29 01:34:49.327
+!MESSAGE Failed to build parent project for br.com.phoebus.starwarsresistence:api-da-resistencia:jar:0.0.1-SNAPSHOT
+
+!ENTRY org.eclipse.core.resources 4 2 2018-10-29 01:34:54.506
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMavenConfiguration(MavenPlugin.java:63)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.instantiateProjectConfigurators(LifecycleMappingFactory.java:752)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectConfigurators(LifecycleMappingFactory.java:1366)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getProjectConfigurators(AbstractCustomizableLifecycleMapping.java:108)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:49)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1$1.call(MavenBuilder.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:106)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:87)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2018-10-29 01:34:54.512
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.m2e.core 4 75 2018-10-29 01:34:54.512
+!MESSAGE Errors running builder 'Maven Project Builder' on project 'api-da-resistencia'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMavenConfiguration(MavenPlugin.java:63)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.instantiateProjectConfigurators(LifecycleMappingFactory.java:752)
+	at org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory.getProjectConfigurators(LifecycleMappingFactory.java:1366)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getProjectConfigurators(AbstractCustomizableLifecycleMapping.java:108)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:49)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1$1.call(MavenBuilder.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:106)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:87)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
